@@ -27,6 +27,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <connections>
+                                    <action selector="resetFields:" destination="BYZ-38-t0r" eventType="editingChanged" id="Iw4-WD-MJY"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKo-JS-N7a">
                                 <rect key="frame" x="30" y="345" width="354" height="40"/>
@@ -35,6 +38,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="resetFields:" destination="BYZ-38-t0r" eventType="editingChanged" id="GbC-43-Mil"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnLogin" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ4-9Q-M4R">
                                 <rect key="frame" x="132" y="802" width="150" height="40"/>
@@ -43,8 +49,9 @@
                                     <constraint firstAttribute="height" constant="40" id="8Jr-SF-V5F"/>
                                     <constraint firstAttribute="width" constant="150" id="ghc-gY-MDb"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="clickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Mk-wj-bZp"/>
@@ -63,6 +70,9 @@
                                     <constraint firstAttribute="width" constant="49" id="V9U-oW-OfL"/>
                                 </constraints>
                                 <color key="onTintColor" red="0.0" green="0.4542093881" blue="0.69851318520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="saveUser:" destination="BYZ-38-t0r" eventType="valueChanged" id="oYd-Xs-ha9"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrar Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-ef-jq7">
                                 <rect key="frame" x="208.33333333333334" y="406.66666666666669" width="116.66666666666666" height="18"/>
@@ -79,6 +89,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-N8-bF9">
                                 <rect key="frame" x="335" y="451" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.4542093881" blue="0.69851318520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="saveBiometrics:" destination="BYZ-38-t0r" eventType="valueChanged" id="zA4-M9-WCa"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -111,6 +124,11 @@
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="jZ4-9Q-M4R" id="pra-FP-xQO"/>
+                        <outlet property="lblValidator" destination="PUs-LA-HBk" id="PgD-Sq-DLB"/>
+                        <outlet property="swtBiometri" destination="Emf-N8-bF9" id="n11-Ln-Pc0"/>
+                        <outlet property="swtSaveUser" destination="DoZ-mD-mUh" id="6DF-Gn-GA3"/>
+                        <outlet property="txtPassword" destination="BKo-JS-N7a" id="sIE-Dv-4MM"/>
+                        <outlet property="txtUser" destination="czh-wR-dii" id="mhU-Oc-x0I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -359,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DQ-SG-qa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357.9710144927537" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1813" y="89"/>
         </scene>
     </scenes>
     <resources>
@@ -368,9 +386,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
