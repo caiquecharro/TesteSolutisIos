@@ -33,11 +33,8 @@ class Utils{
             return false
             
         }
-        //        else if !hasUppercaseCharacters(string: password){
-        //
-        //            return false
-        //
-        //        }
+//                else if !hasUppercaseCharacters(string: password){ return false }
+        
         return true
         
     }
@@ -82,7 +79,56 @@ class Utils{
         
     }
     
+    class func formatCPF(_ textoPuro: String?) -> String? {
+
+        var textoFormatado = ""
+        var lastPos = 0
+
+        if (textoPuro?.count ?? 0) > 3 {
+            textoFormatado += (textoPuro as NSString?)?.substring(with: NSRange(location: 0, length: 3)) ?? ""
+            textoFormatado += "."
+            lastPos = 3
+        }
+        if (textoPuro?.count ?? 0) > 6 {
+            textoFormatado += (textoPuro as NSString?)?.substring(with: NSRange(location: 3, length: 3)) ?? ""
+            textoFormatado += "."
+            lastPos = 6
+        }
+        if (textoPuro?.count ?? 0) > 9 {
+            textoFormatado += (textoPuro as NSString?)?.substring(with: NSRange(location: 6, length: 3)) ?? ""
+            textoFormatado += "-"
+            lastPos = 9
+        }
+        textoFormatado += (textoPuro as NSString?)?.substring(with: NSRange(location: lastPos, length: (textoPuro?.count ?? 0) - lastPos)) ?? ""
+
+        return textoFormatado.description
+    }
     
+    class func formattedDate(dateString: String) -> String {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd/MM/yyyy"
+        
+        
+        let date = dateFormatterGet.date(from: dateString)
+        
+        let dataFormatadaString = dateFormatterPrint.string(from: date!)
+        
+        
+        return dataFormatadaString
+    }
     
+    class func formattedValue(valor: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "pt-BR")
+        formatter.numberStyle = .currency
+        
+        let safeValue = valor
+        let formattedValue = formatter.string(from: safeValue as NSNumber)
+            
+        return formattedValue!
+    }
     
 }

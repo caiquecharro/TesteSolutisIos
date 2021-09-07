@@ -8,10 +8,10 @@
 import UIKit
 import KeychainSwift
 import SVProgressHUD
+import LocalAuthentication
 
 
 class LoginViewController: UIViewController , LoginResponseDelegate, UITextFieldDelegate, UITextViewDelegate {
-    
 
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtUser: UITextField!
@@ -26,23 +26,33 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
     var username: String?
     var password: String?
     
+    var isAutoLogin: Bool = false
+    var isBiometry: Bool = false
     
+    var user: UserModel?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        
-        
+
         self.btnLogin.layer.cornerRadius = self.btnLogin.frame.width/8.0
         self.btnLogin.layer.masksToBounds = true
         self.lblValidator.isHidden = true
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
-//        self.txtUser.text = "teste@teste.com.br"
-//        self.txtPassword.text = "abc123@"
+        setupLogin()
+        
+    }
+    
+    
+    func setupLogin(){
+        
+        self.txtUser.text = ""
+        self.txtPassword.text = ""
         
         let keychain = KeychainSwift()
         
@@ -50,10 +60,9 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
             
             swtBiometri.isOn = true
             swtSaveUser.isOn = true
-            
-            //TODO
-            
-            
+
+            self.biometriaUsuario()
+
         }
         
         if keychain.get("lembrarUsuario") != nil{
@@ -62,27 +71,44 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
             
         }
         
-        
-        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
- 
-//        password = keychain.get("userPassword")
+    func biometriaUsuario(){
         
-    }
-    
-    
+        let context = LAContext()
+        var error: NSError?
 
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+
+                DispatchQueue.main.async {
+                    if success {
+                        self!.isBiometry = true
+                        self!.doLogin()
+                    } else {
+                        // error
+                        self!.isBiometry = false
+                        
+                    }
+                }
+            }
+        } else {
+            
+            self.isBiometry = false
+            
+        }
+        
+    }
+    
     @IBAction func clickLogin(_ sender: Any) {
         
         self.validations()
         
-//        let vc = HomeView() //your view controller
-//        self.present(vc, animated: true, completion: nil)
-        
     }
+    
     @IBAction func resetFields(_ sender: UITextField) {
         if sender == txtUser {
             txtUser.layer.borderColor = uiColorGreenPool.cgColor
@@ -122,19 +148,7 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
         if let mensagem = mensagem {
             
             let alert = UIAlertController(title: "Alert", message: mensagem, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                switch action.style{
-                    case .default:
-                    print("default")
-                    
-                    case .cancel:
-                    print("cancel")
-                    
-                    case .destructive:
-                    print("destructive")
-                    
-                }
-            }))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))
             self.present(alert, animated: true, completion: nil)
             
             return false
@@ -145,10 +159,7 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
             return true
         }
 
-            
     }
-
-    
     
     func doLogin(){
         
@@ -157,12 +168,17 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
         self.username = self.txtUser.text
         self.password = self.txtPassword.text
         
+        if isBiometry == true{
+            var keychain = KeychainSwift()
+            
+            self.username = keychain.get("userName")
+            self.password = keychain.get("userPassword")
+            
+        }
+        
         Services().restLogin(username: self.username!, password: self.password!, delegate: self)
 
-        
     }
-    
-    
     
     @IBAction func saveUser(_ sender: Any) {
         
@@ -170,16 +186,15 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
             
             let alert = UIAlertController(title: "Alert", message: "O usuario sera lembrado", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
-                
-                print("teste")
+                self.isAutoLogin = true
             }))
             self.present(alert, animated: true, completion: nil)
             
  
             
         }else{
+            self.isAutoLogin = false
             let keychain = KeychainSwift()
-            
             
             keychain.delete("userName")
             keychain.delete("lembrarUsuario")
@@ -189,6 +204,7 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
         }
         
     }
+    
     @IBAction func saveBiometrics(_ sender: Any) {
         
         if swtBiometri.isOn{
@@ -198,22 +214,25 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
                 var refreshAlert = UIAlertController(title: "Alerta", message: "No proximo login sera necessario biometria", preferredStyle: .alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { [self] (action: UIAlertAction!) in
+                    self.isBiometry = true
                   }))
 
                 present(refreshAlert, animated: true, completion: nil)
-                
-                
-                
+                                
             }else{
                 
                 var refreshAlert = UIAlertController(title: "Alerta", message: "Para usar biometria o lembrar usuario sera habilitado", preferredStyle: .alert)
 
                 refreshAlert.addAction(UIAlertAction(title: "Aceitar", style: .default, handler: { (action: UIAlertAction!) in
                     self.swtSaveUser.isOn = true
+                    self.isAutoLogin = true
+                    self.isBiometry = true
                   }))
 
                 refreshAlert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: {(action: UIAlertAction!) in
                     self.swtBiometri.isOn = false
+                    self.isAutoLogin = false
+                    self.isBiometry = false
                   }))
 
                 present(refreshAlert, animated: true, completion: nil)
@@ -222,15 +241,15 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
             
         }else{
             
-            let keychain = KeychainSwift()
+            self.isAutoLogin = false
+            self.isBiometry = false
             
+            let keychain = KeychainSwift()
 
             keychain.delete("userPassword")
             keychain.delete("lembrarBiometria")
             
-            
         }
-        
         
     }
     
@@ -238,58 +257,51 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
     func resultRequestValidateLogin(result: UserModel) {
         
         SVProgressHUD.dismiss()
+        
         if result.mensagem != ""{
             
             let alert = UIAlertController(title: "Alert", message: result.mensagem, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                switch action.style{
-                    case .default:
-                    print("default")
-                    
-                    case .cancel:
-                    print("cancel")
-                    
-                    case .destructive:
-                    print("destructive")
-                        
-                    
-                }
-            }))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))
             self.present(alert, animated: true, completion: nil)
         }else{
             let keychain = KeychainSwift()
+            self.user = result
             
             if swtSaveUser.isOn{
-                
-                
                 
                 keychain.set(self.txtUser.text!, forKey: "userName")
                 keychain.set(true, forKey: "lembrarUsuario")
                 
                 if swtBiometri.isOn {
-                    
 
                     keychain.set(self.txtPassword.text!, forKey: "userPassword")
                     keychain.set(true, forKey: "lembrarBiometria")
+                    
                     
                 }else{
                     keychain.delete("userPassword")
                     keychain.delete("lembrarBiometria")
                     
                 }
-                
-                
             }else{
                 
                 keychain.delete("userName")
                 keychain.delete("lembrarUsuario")
                 
-                
             }
             
+            performSegue(withIdentifier: "LoginToMenu", sender: self)
             
         }
-        
+  
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "LoginToMenu" {
+            let home = segue.destination as? HomeView
+            home?.user = self.user
+        }
         
     }
     

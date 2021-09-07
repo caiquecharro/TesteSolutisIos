@@ -1,20 +1,24 @@
 PODS:
   - KeychainSwift (19.0.0)
   - SVProgressHUD (2.0.3)
+  - VMaskTextField (1.0.8)
 
 DEPENDENCIES:
   - KeychainSwift
   - SVProgressHUD (= 2.0.3)
+  - VMaskTextField (= 1.0.8)
 
 SPEC REPOS:
   trunk:
     - KeychainSwift
     - SVProgressHUD
+    - VMaskTextField
 
 SPEC CHECKSUMS:
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
 
-PODFILE CHECKSUM: 0495772101e3be56be302486142708afb69a4635
+PODFILE CHECKSUM: 1804893b5cd53fbd6cf236b437e9fa9d20c01413
 
 COCOAPODS: 1.10.1

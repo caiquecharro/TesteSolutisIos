@@ -14,9 +14,17 @@ protocol LoginResponseDelegate : NSObjectProtocol {
   func resultRequestValidateLogin(result: UserModel)
 }
 
+protocol StatementsResponseDelegate : NSObjectProtocol {
+  func resultRequestValidateStatement(result: [StatementsResponse])
+}
+
 class Services {
-    weak var loginResponseDelegate: LoginResponseDelegate?
     
+    weak var loginResponseDelegate: LoginResponseDelegate?
+    weak var statementsResponseDelegate: StatementsResponseDelegate?
+    
+    
+    // MARK: - Servicos Login
     
     func restLogin(username: String, password: String, delegate: LoginResponseDelegate) {
         
@@ -43,7 +51,7 @@ class Services {
                     user.nome = json["nome"] as! String
                     user.cpf = json["cpf"] as! String
                     user.token = json["token"] as! String
-                    user.saldo = (json["saldo"] as! NSNumber).floatValue
+                    user.saldo = (json["saldo"] as! NSNumber).doubleValue
                 }
 
                 
@@ -61,6 +69,55 @@ class Services {
     func onResponseLogin(user: UserModel) {
         DispatchQueue.main.async(execute: {
           self.loginResponseDelegate?.resultRequestValidateLogin(result: user)
+        })
+    }
+    
+    // MARK: - Servicos extrato
+    
+    func restStatement(token: String, delegate: StatementsResponseDelegate) {
+        
+        statementsResponseDelegate = delegate
+        
+        let session = URLSession(configuration: .default)
+        var request = URLRequest(url: URL(string: "https://api.mobile.test.solutis.xyz/extrato")!)
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(token, forHTTPHeaderField: "token")
+        request.httpMethod = "GET"
+
+        
+        let task = session.dataTask(with: request) { data, response, error
+            in
+            print(response!)
+            do {
+                
+                let extractData = try JSONDecoder().decode([StatementsResponse].self, from: data!)
+                var extractList: [StatementsResponse] = []
+                
+                for item in extractData {
+                    
+                    let response = StatementsResponse()
+                    response.descricao = item.descricao
+                    response.data = item.data
+                    response.valor = item.valor
+                    
+                    extractList.append(response)
+                }
+                
+                self.onResponseStatement(listStatements: extractList)
+                
+                
+            } catch {
+                print("error")
+            }
+        }
+        task.resume()
+  
+    }
+    
+    func onResponseStatement(listStatements: [StatementsResponse]) {
+        DispatchQueue.main.async(execute: {
+          self.statementsResponseDelegate?.resultRequestValidateStatement(result: listStatements)
         })
     }
     

@@ -1,24 +1,25 @@
 //
-//  cellPositiva.swift
+//  CellNegativo.swift
 //  teste
 //
-//  Created by caique charro on 13/06/21.
+//  Created by caique charro on 01/09/21.
 //
 
 import Foundation
 import UIKit
 
 
-class CellPositiva : UITableViewCell {
+class CellNegativa : UITableViewCell {
     
     
+
     @IBOutlet weak var mainBackground: UIView!
     @IBOutlet weak var shadowLayer: UIView!
     
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblValor: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
-    
+
     
     func update(statement: StatementsResponse!){
         
@@ -43,5 +44,6 @@ class CellPositiva : UITableViewCell {
         }
         
     }
-
+    
 }
+

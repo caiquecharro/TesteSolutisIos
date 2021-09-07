@@ -15,7 +15,11 @@
 		BA447DD326752C5400C0932F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA447DD226752C5400C0932F /* Assets.xcassets */; };
 		BA447DD626752C5400C0932F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA447DD426752C5400C0932F /* LaunchScreen.storyboard */; };
 		BA447DDE2676795F00C0932F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DDD2676795F00C0932F /* HomeView.swift */; };
+		BA6789D526E8002C002663C2 /* BiometryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6789D426E8002C002663C2 /* BiometryContext.swift */; };
+		BA9C2F1126E14940007B245E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA9C2F1026E14940007B245E /* Localizable.strings */; };
 		BAB540D726CAB53500ACE26A /* CellPositiva.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DDF2676817300C0932F /* CellPositiva.swift */; };
+		BAC355A626E7A9B300C8C6EE /* StatementsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC355A526E7A9B300C8C6EE /* StatementsResponse.swift */; };
+		BAD255F526DFC4560074E15C /* CellNegativo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD255F426DFC4560074E15C /* CellNegativo.swift */; };
 		BAD8E75126CD94C5001BE4C1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8E75026CD94C5001BE4C1 /* Service.swift */; };
 		BAD8E75426CD9C2D001BE4C1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8E75326CD9C2D001BE4C1 /* UserModel.swift */; };
 		BAD8E75726CDBDC7001BE4C1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8E75626CDBDC7001BE4C1 /* Utils.swift */; };
@@ -35,6 +39,10 @@
 		BA447DD726752C5400C0932F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA447DDD2676795F00C0932F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BA447DDF2676817300C0932F /* CellPositiva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPositiva.swift; sourceTree = "<group>"; };
+		BA6789D426E8002C002663C2 /* BiometryContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometryContext.swift; path = ../../../../../Projetos/AGI.APP.Agillitas.IOS/Source/Apps/iOS/Agillitas/BiometryContext.swift; sourceTree = "<group>"; };
+		BA9C2F1026E14940007B245E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BAC355A526E7A9B300C8C6EE /* StatementsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsResponse.swift; sourceTree = "<group>"; };
+		BAD255F426DFC4560074E15C /* CellNegativo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNegativo.swift; sourceTree = "<group>"; };
 		BAD8E75026CD94C5001BE4C1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = teste/Service/Service.swift; sourceTree = SOURCE_ROOT; };
 		BAD8E75326CD9C2D001BE4C1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		BAD8E75626CDBDC7001BE4C1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				BA447DDF2676817300C0932F /* CellPositiva.swift */,
+				BAD255F426DFC4560074E15C /* CellNegativo.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -114,6 +123,7 @@
 				BA447DC926752C5300C0932F /* AppDelegate.swift */,
 				BA447DCB26752C5300C0932F /* SceneDelegate.swift */,
 				BA447DCF26752C5300C0932F /* Main.storyboard */,
+				BA9C2F1026E14940007B245E /* Localizable.strings */,
 				BA447DD226752C5400C0932F /* Assets.xcassets */,
 				BA447DD426752C5400C0932F /* LaunchScreen.storyboard */,
 				BA447DD726752C5400C0932F /* Info.plist */,
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD8E75326CD9C2D001BE4C1 /* UserModel.swift */,
+				BAC355A526E7A9B300C8C6EE /* StatementsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD8E75626CDBDC7001BE4C1 /* Utils.swift */,
+				BA6789D426E8002C002663C2 /* BiometryContext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,6 +219,7 @@
 			files = (
 				BA447DD626752C5400C0932F /* LaunchScreen.storyboard in Resources */,
 				BA447DD326752C5400C0932F /* Assets.xcassets in Resources */,
+				BA9C2F1126E14940007B245E /* Localizable.strings in Resources */,
 				BA447DD126752C5300C0932F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC355A626E7A9B300C8C6EE /* StatementsResponse.swift in Sources */,
+				BA6789D526E8002C002663C2 /* BiometryContext.swift in Sources */,
+				BAD255F526DFC4560074E15C /* CellNegativo.swift in Sources */,
 				BAB540D726CAB53500ACE26A /* CellPositiva.swift in Sources */,
 				BAD8E75426CD9C2D001BE4C1 /* UserModel.swift in Sources */,
 				BA447DCE26752C5300C0932F /* LoginViewController.swift in Sources */,

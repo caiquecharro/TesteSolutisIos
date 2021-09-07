@@ -7,39 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B78BCEBF8F21F8ACDC4A8FD18A367C1 /* Pods-teste-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A113EBAC0FF78CE1C47782625E33E0 /* Pods-teste-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D5E3D3BF33F96FD71B23863D3D60B4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CFF0C0017F22BDFD37867B12AA81A1B /* SVProgressHUD.bundle */; };
-		2F35362ECB0223EE9D5572C5D8E3B684 /* Pods-teste-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2D479EC605AF9ECFA2C808D9787A0 /* Pods-teste-dummy.m */; };
+		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED08B62626AAE4DC4C555950133774D /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6D50C382749B7A2AE8D513D25C06397 /* SVProgressHUD.bundle */; };
 		30528E9F78AD793A9A7CEB6C6A8A054F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
-		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53E1A24191636E8372FEBE2C17B34B /* TegKeychainConstants.swift */; };
-		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B06ED211E830C26BBA9285D093210B /* SVProgressHUD.m */; };
-		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C87991FD8F0A3F9DF725FDC7232005 /* KeychainSwiftAccessOptions.swift */; };
-		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164D6687A8D9E7DF564C8AB664894A58 /* KeychainSwift-dummy.m */; };
-		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04005D4DBA61E8CFAC01A7A99EE30 /* KeychainSwift.swift */; };
-		6D52368FFD8B2EDC835845842AD45891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06264F5A16B4931E5A810ED515F235B9 /* TegKeychainConstants.swift */; };
+		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A38553EBA375C0F92E5C3C0C5DE112 /* SVProgressHUD.m */; };
+		405797848353C86816720AC67CBC49D0 /* VMaskTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField.bundle */; };
+		409D2135DB611F0C9F1BE7E40E201487 /* VMaskTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B82124022055B757990DAD2A63C7F4 /* VMaskTextField-dummy.m */; };
+		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3905919FF9974DA2628E9EF2E1139083 /* KeychainSwiftAccessOptions.swift */; };
+		49B1BD84FE5BAF8B67C6113DB09CC79E /* VMaskTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D34832F2169717F8852BA62E9A250C /* VMaskTextField.m */; };
+		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9F5823F72E7F0FA95222CC9F29E5BD /* KeychainSwift-dummy.m */; };
+		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781309C438FC5DB21AC7437BBA3569A3 /* KeychainSwift.swift */; };
+		4FC9D78CAFB5AA0A946510E438C36AFF /* VMaskTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE8BEBCD2E8570AB49BE8A68016CB56 /* VMaskTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B44CBCC7750753C647262A4BFC382D6 /* VMaskEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8A6D2229EFB1BBA1BE08E4E7BEB043 /* VMaskEditor.m */; };
 		7F52BD0341E46A6053B15014557ACB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
-		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F550356A4B7C27D4BD77E327DF18638 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69DED3DF9421A426940FFDB2945271 /* SVProgressHUD-dummy.m */; };
-		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5FB510EC2D1F894BC1470CEE456567 /* SVIndefiniteAnimatedView.m */; };
-		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DCB379F6E70CF7614A8147F211FA97 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0ED97C5C137B9587D4F4C475C8A38C /* SVRadialGradientLayer.m */; };
-		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CA56CFDFAF97493C19D28327DB72DC7A /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D7F5870725488968AF42E48C993F16 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2509CDBED59BD09FD37889408C567764 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A66FAE71FE9919BCDB00207679028F /* VMaskEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 327954F020C091E6273AD7DCDF5934E4 /* VMaskEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = A654470AF71B73E90E5C471B63976146 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		977E9126DA88916789583D694825D3A0 /* Pods-teste-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2D479EC605AF9ECFA2C808D9787A0 /* Pods-teste-dummy.m */; };
+		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E3FAC8FF72F5D37FEA351635300714 /* SVProgressHUD-dummy.m */; };
+		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C7C314F98BC75E093BABDAAB2E934 /* SVIndefiniteAnimatedView.m */; };
+		B661271DB0C8AB09DFFDD53A9AC0780B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7427436D328534BCFFBA717297EE75 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB4E40E332DEF9A192BE63BCBA45D40 /* SVRadialGradientLayer.m */; };
+		D82F7CF27850D0DBC675F68CB55B7268 /* Pods-teste-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A113EBAC0FF78CE1C47782625E33E0 /* Pods-teste-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B70B0A4A54129F7F63A1D42316F8E9D7 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3740AEAB11DF149831C001ABEBAE999 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDA8774D288C691EE366BD1A8D5B85E /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E28C2A4D11D0E714F957E6AEF7F92B9F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */; };
-		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D03BBA42ABB9D6BBC3A97D71DEE642C /* SVProgressAnimatedView.m */; };
+		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CB56D6E2858DB21F579571B5A82F86 /* SVProgressAnimatedView.m */; };
+		F1EE63D54978929C5D93929EE7A35C90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		F4DEED8C894764EEA306FA7172DB540C /* VMaskTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2EFA7AC8D13241F97C6A09168B9F21 /* VMaskTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		84D645C887ACF5C23095F1AB51A34C2F /* PBXContainerItemProxy */ = {
+		3103E30B084A376FE1D06E5B6C7D872F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E763F14765476678A309E392653B3498;
+			remoteInfo = "VMaskTextField-VMaskTextField";
+		};
+		663BFFB41C576B2420021BACB4D0E2DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 088B8C3B51FC2AFA7E98EC5DB30033F6;
+			remoteInfo = VMaskTextField;
+		};
+		75F1AEF1AFA534AFD94191AEB168DAC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
 			remoteInfo = SVProgressHUD;
 		};
-		93F9C85E71EC391346C49FA9DAB21B21 /* PBXContainerItemProxy */ = {
+		DB90D9422C1DE9DF66BCF24A7325A765 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -49,55 +71,85 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008E0CA8236A4E41B12C8B108526FA23 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
 		03C108B1DE41EE67434C87E9A2897C10 /* Pods_teste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_teste.framework; path = "Pods-teste.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04F9600564B4476628DC1F88A8BD4821 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
-		164D6687A8D9E7DF564C8AB664894A58 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		06264F5A16B4931E5A810ED515F235B9 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		089DFB5C0CD65FCF72729D22AC3D4E05 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		0BF78986C7DA3F2676582B40A3749177 /* VMaskTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VMaskTextField.release.xcconfig; sourceTree = "<group>"; };
+		157D966720DA4A4C556D896DEC3E3FF5 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		19AFDC446F6F01DE54F7BEF515AE29D3 /* Pods-teste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-teste.release.xcconfig"; sourceTree = "<group>"; };
-		1BD0018823BCAE7825FF3E8E186FBD1B /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
-		205EB50FD7856330B4E258AD202AA37E /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		2509CDBED59BD09FD37889408C567764 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		1E2D61230959BC05992E5DDE019073FC /* VMaskTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VMaskTextField.debug.xcconfig; sourceTree = "<group>"; };
 		28791046BC26A18730CE5BCDDF2C54CD /* Pods-teste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-teste.debug.xcconfig"; sourceTree = "<group>"; };
-		2F7648FB6FD37C1A9CB1F2A0967FE916 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		2FE8BEBCD2E8570AB49BE8A68016CB56 /* VMaskTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-umbrella.h"; sourceTree = "<group>"; };
 		2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34D5E3D3BF33F96FD71B23863D3D60B4 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		3CFF0C0017F22BDFD37867B12AA81A1B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		327954F020C091E6273AD7DCDF5934E4 /* VMaskEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskEditor.h; path = Pod/Classes/VMaskEditor.h; sourceTree = "<group>"; };
+		3905919FF9974DA2628E9EF2E1139083 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		4540B52588DA778F504B2ECF1438B9F8 /* Pods-teste-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-teste-Info.plist"; sourceTree = "<group>"; };
-		48D7F5870725488968AF42E48C993F16 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		4B53E1A24191636E8372FEBE2C17B34B /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
-		4F550356A4B7C27D4BD77E327DF18638 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		49C7AA7AEB5466A186DA5252469939EC /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = VMaskTextField.bundle; path = "VMaskTextField-VMaskTextField.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CFEBC5FD420D2AAD77F9C5038C6CD /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		5321536BC03440A6B8A67A397CCBA6BB /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
 		59432405DDE9567C65AFC50AA4658228 /* Pods-teste-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-teste-frameworks.sh"; sourceTree = "<group>"; };
 		5AF2D479EC605AF9ECFA2C808D9787A0 /* Pods-teste-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-teste-dummy.m"; sourceTree = "<group>"; };
 		5CE3A914D28ACB4FE6A7F41DE4DF9C65 /* Pods-teste.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-teste.modulemap"; sourceTree = "<group>"; };
-		5D03BBA42ABB9D6BBC3A97D71DEE642C /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		5D14AA106DA30390F85F4FA5B3E12005 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		5ED08B62626AAE4DC4C555950133774D /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		601948D2AC6948B1DE5330F66DBE1D81 /* Pods-teste-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-teste-acknowledgements.plist"; sourceTree = "<group>"; };
-		71DCB379F6E70CF7614A8147F211FA97 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		708F3F4078B2DC76A5AEE43D10C97947 /* VMaskTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VMaskTextField-Info.plist"; sourceTree = "<group>"; };
 		74657195F235CAEF48924B6CBE3A92A5 /* Pods-teste-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-teste-acknowledgements.markdown"; sourceTree = "<group>"; };
-		79C04005D4DBA61E8CFAC01A7A99EE30 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
-		84B06ED211E830C26BBA9285D093210B /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		865DDFDB517DD3037806E19A0F368890 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
-		8D3E479A72CB3651FD3C876BE223C446 /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		781309C438FC5DB21AC7437BBA3569A3 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		82B82124022055B757990DAD2A63C7F4 /* VMaskTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VMaskTextField-dummy.m"; sourceTree = "<group>"; };
+		874C7C314F98BC75E093BABDAAB2E934 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		9BDA8774D288C691EE366BD1A8D5B85E /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0BD044099418E2C58410E3CA8D6004E /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
-		A3C87991FD8F0A3F9DF725FDC7232005 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
-		A4A04D7ACC9EED09EB896FFB2D5FD57B /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
-		AD5FB510EC2D1F894BC1470CEE456567 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A1D7B2ADCB3250A82E574BF83CFA579A /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		A3740AEAB11DF149831C001ABEBAE999 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		A3E85DF4350E9494D47884B4516EAEB1 /* VMaskTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VMaskTextField.modulemap; sourceTree = "<group>"; };
+		A654470AF71B73E90E5C471B63976146 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		AAA625AFCE99DDA127B64E3DF4A34099 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		AC7427436D328534BCFFBA717297EE75 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		B70B0A4A54129F7F63A1D42316F8E9D7 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		C0A38553EBA375C0F92E5C3C0C5DE112 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		C5888D46491422CCC3BD78BA705132DA /* ResourceBundle-VMaskTextField-VMaskTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-VMaskTextField-VMaskTextField-Info.plist"; sourceTree = "<group>"; };
+		C68FC2452E414D9B355C5BD52221D2CE /* VMaskTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-prefix.pch"; sourceTree = "<group>"; };
 		C9A113EBAC0FF78CE1C47782625E33E0 /* Pods-teste-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-teste-umbrella.h"; sourceTree = "<group>"; };
-		CA56CFDFAF97493C19D28327DB72DC7A /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		CE0ED97C5C137B9587D4F4C475C8A38C /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		CE69DED3DF9421A426940FFDB2945271 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		D0541B4383741920A5AAC15C77D90959 /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		D7D34832F2169717F8852BA62E9A250C /* VMaskTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskTextField.m; path = Pod/Classes/VMaskTextField.m; sourceTree = "<group>"; };
+		DBB4E40E332DEF9A192BE63BCBA45D40 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		DF8A6D2229EFB1BBA1BE08E4E7BEB043 /* VMaskEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskEditor.m; path = Pod/Classes/VMaskEditor.m; sourceTree = "<group>"; };
+		E1E3FAC8FF72F5D37FEA351635300714 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		E5CB56D6E2858DB21F579571B5A82F86 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		E6D50C382749B7A2AE8D513D25C06397 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC69C37C5084A5C7827044F6E4198DF4 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VMaskTextField.framework; path = VMaskTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9F5823F72E7F0FA95222CC9F29E5BD /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		F229AF38134CB425B9DEE5309D438787 /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		FC2EFA7AC8D13241F97C6A09168B9F21 /* VMaskTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskTextField.h; path = Pod/Classes/VMaskTextField.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F47B368B4AB3076A825888684B046D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B661271DB0C8AB09DFFDD53A9AC0780B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				30528E9F78AD793A9A7CEB6C6A8A054F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D703B14617E68823EC79D06C4744BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1EE63D54978929C5D93929EE7A35C90 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +162,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3562EB84A82724551E6D880C5AE189B /* Frameworks */ = {
+		B7D778C1F4E4D44E128F09F81E0772DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D52368FFD8B2EDC835845842AD45891 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,72 +205,95 @@
 			path = "Target Support Files/Pods-teste";
 			sourceTree = "<group>";
 		};
-		750C6E13CB434D42E01326B6AF0A2099 /* KeychainSwift */ = {
+		504ECDE5208CEDFF4CAB802C6AE83893 /* KeychainSwift */ = {
 			isa = PBXGroup;
 			children = (
-				79C04005D4DBA61E8CFAC01A7A99EE30 /* KeychainSwift.swift */,
-				A3C87991FD8F0A3F9DF725FDC7232005 /* KeychainSwiftAccessOptions.swift */,
-				4B53E1A24191636E8372FEBE2C17B34B /* TegKeychainConstants.swift */,
-				8B42C76B2CDECC9E9B517944D6F008CB /* Support Files */,
+				781309C438FC5DB21AC7437BBA3569A3 /* KeychainSwift.swift */,
+				3905919FF9974DA2628E9EF2E1139083 /* KeychainSwiftAccessOptions.swift */,
+				06264F5A16B4931E5A810ED515F235B9 /* TegKeychainConstants.swift */,
+				ADD9C0DF1AAC9A6AF87047F662174C35 /* Support Files */,
 			);
 			name = KeychainSwift;
 			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
-		891AB2F60A9087513C05147790755547 /* Support Files */ = {
+		5A131B406E537ABF505BE5FDBD016B3D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				205EB50FD7856330B4E258AD202AA37E /* SVProgressHUD.modulemap */,
-				CE69DED3DF9421A426940FFDB2945271 /* SVProgressHUD-dummy.m */,
-				2F7648FB6FD37C1A9CB1F2A0967FE916 /* SVProgressHUD-Info.plist */,
-				FC69C37C5084A5C7827044F6E4198DF4 /* SVProgressHUD-prefix.pch */,
-				48D7F5870725488968AF42E48C993F16 /* SVProgressHUD-umbrella.h */,
-				A0BD044099418E2C58410E3CA8D6004E /* SVProgressHUD.debug.xcconfig */,
-				04F9600564B4476628DC1F88A8BD4821 /* SVProgressHUD.release.xcconfig */,
+				504ECDE5208CEDFF4CAB802C6AE83893 /* KeychainSwift */,
+				A1CE0CCD21057ED4AF8275B2F81C894F /* SVProgressHUD */,
+				5FCB2602B579DAB5A1D23B8E23C65A3F /* VMaskTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FCB2602B579DAB5A1D23B8E23C65A3F /* VMaskTextField */ = {
+			isa = PBXGroup;
+			children = (
+				327954F020C091E6273AD7DCDF5934E4 /* VMaskEditor.h */,
+				DF8A6D2229EFB1BBA1BE08E4E7BEB043 /* VMaskEditor.m */,
+				FC2EFA7AC8D13241F97C6A09168B9F21 /* VMaskTextField.h */,
+				D7D34832F2169717F8852BA62E9A250C /* VMaskTextField.m */,
+				D399DFEA6F569B8A11D2DA4EA7D6F14B /* Support Files */,
+			);
+			name = VMaskTextField;
+			path = VMaskTextField;
+			sourceTree = "<group>";
+		};
+		618EEA6D15324BCDBF7602226D07C9A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAA625AFCE99DDA127B64E3DF4A34099 /* SVProgressHUD.modulemap */,
+				E1E3FAC8FF72F5D37FEA351635300714 /* SVProgressHUD-dummy.m */,
+				089DFB5C0CD65FCF72729D22AC3D4E05 /* SVProgressHUD-Info.plist */,
+				5D14AA106DA30390F85F4FA5B3E12005 /* SVProgressHUD-prefix.pch */,
+				A3740AEAB11DF149831C001ABEBAE999 /* SVProgressHUD-umbrella.h */,
+				D0541B4383741920A5AAC15C77D90959 /* SVProgressHUD.debug.xcconfig */,
+				157D966720DA4A4C556D896DEC3E3FF5 /* SVProgressHUD.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		8B42C76B2CDECC9E9B517944D6F008CB /* Support Files */ = {
+		A1CE0CCD21057ED4AF8275B2F81C894F /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				008E0CA8236A4E41B12C8B108526FA23 /* KeychainSwift.modulemap */,
-				164D6687A8D9E7DF564C8AB664894A58 /* KeychainSwift-dummy.m */,
-				1BD0018823BCAE7825FF3E8E186FBD1B /* KeychainSwift-Info.plist */,
-				865DDFDB517DD3037806E19A0F368890 /* KeychainSwift-prefix.pch */,
-				71DCB379F6E70CF7614A8147F211FA97 /* KeychainSwift-umbrella.h */,
-				8D3E479A72CB3651FD3C876BE223C446 /* KeychainSwift.debug.xcconfig */,
-				A4A04D7ACC9EED09EB896FFB2D5FD57B /* KeychainSwift.release.xcconfig */,
+				A654470AF71B73E90E5C471B63976146 /* SVIndefiniteAnimatedView.h */,
+				874C7C314F98BC75E093BABDAAB2E934 /* SVIndefiniteAnimatedView.m */,
+				9BDA8774D288C691EE366BD1A8D5B85E /* SVProgressAnimatedView.h */,
+				E5CB56D6E2858DB21F579571B5A82F86 /* SVProgressAnimatedView.m */,
+				5ED08B62626AAE4DC4C555950133774D /* SVProgressHUD.h */,
+				C0A38553EBA375C0F92E5C3C0C5DE112 /* SVProgressHUD.m */,
+				B70B0A4A54129F7F63A1D42316F8E9D7 /* SVRadialGradientLayer.h */,
+				DBB4E40E332DEF9A192BE63BCBA45D40 /* SVRadialGradientLayer.m */,
+				A951E248DBAE04441851673027E49AB3 /* Resources */,
+				618EEA6D15324BCDBF7602226D07C9A9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/KeychainSwift";
+			name = SVProgressHUD;
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		97C42AA85281B1D28EB77AE2611697CD /* Resources */ = {
+		A951E248DBAE04441851673027E49AB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3CFF0C0017F22BDFD37867B12AA81A1B /* SVProgressHUD.bundle */,
+				E6D50C382749B7A2AE8D513D25C06397 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A81821716198988FFEC224CA2E67E61C /* SVProgressHUD */ = {
+		ADD9C0DF1AAC9A6AF87047F662174C35 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F550356A4B7C27D4BD77E327DF18638 /* SVIndefiniteAnimatedView.h */,
-				AD5FB510EC2D1F894BC1470CEE456567 /* SVIndefiniteAnimatedView.m */,
-				2509CDBED59BD09FD37889408C567764 /* SVProgressAnimatedView.h */,
-				5D03BBA42ABB9D6BBC3A97D71DEE642C /* SVProgressAnimatedView.m */,
-				34D5E3D3BF33F96FD71B23863D3D60B4 /* SVProgressHUD.h */,
-				84B06ED211E830C26BBA9285D093210B /* SVProgressHUD.m */,
-				CA56CFDFAF97493C19D28327DB72DC7A /* SVRadialGradientLayer.h */,
-				CE0ED97C5C137B9587D4F4C475C8A38C /* SVRadialGradientLayer.m */,
-				97C42AA85281B1D28EB77AE2611697CD /* Resources */,
-				891AB2F60A9087513C05147790755547 /* Support Files */,
+				5321536BC03440A6B8A67A397CCBA6BB /* KeychainSwift.modulemap */,
+				EA9F5823F72E7F0FA95222CC9F29E5BD /* KeychainSwift-dummy.m */,
+				F229AF38134CB425B9DEE5309D438787 /* KeychainSwift-Info.plist */,
+				A1D7B2ADCB3250A82E574BF83CFA579A /* KeychainSwift-prefix.pch */,
+				AC7427436D328534BCFFBA717297EE75 /* KeychainSwift-umbrella.h */,
+				4C1CFEBC5FD420D2AAD77F9C5038C6CD /* KeychainSwift.debug.xcconfig */,
+				49C7AA7AEB5466A186DA5252469939EC /* KeychainSwift.release.xcconfig */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -227,8 +301,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				EDE67CD2DEB79BD0EADBB56949E05022 /* Pods */,
-				D3E4E25B3AB3918DE3AE2E0C1D7E5758 /* Products */,
+				5A131B406E537ABF505BE5FDBD016B3D /* Pods */,
+				EE941AF34F36F25A394E48B8DBB2CDCD /* Products */,
 				425EA109968D1376961E8F8CAC77BB60 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -242,33 +316,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D3E4E25B3AB3918DE3AE2E0C1D7E5758 /* Products */ = {
+		D399DFEA6F569B8A11D2DA4EA7D6F14B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5888D46491422CCC3BD78BA705132DA /* ResourceBundle-VMaskTextField-VMaskTextField-Info.plist */,
+				A3E85DF4350E9494D47884B4516EAEB1 /* VMaskTextField.modulemap */,
+				82B82124022055B757990DAD2A63C7F4 /* VMaskTextField-dummy.m */,
+				708F3F4078B2DC76A5AEE43D10C97947 /* VMaskTextField-Info.plist */,
+				C68FC2452E414D9B355C5BD52221D2CE /* VMaskTextField-prefix.pch */,
+				2FE8BEBCD2E8570AB49BE8A68016CB56 /* VMaskTextField-umbrella.h */,
+				1E2D61230959BC05992E5DDE019073FC /* VMaskTextField.debug.xcconfig */,
+				0BF78986C7DA3F2676582B40A3749177 /* VMaskTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VMaskTextField";
+			sourceTree = "<group>";
+		};
+		EE941AF34F36F25A394E48B8DBB2CDCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
 				03C108B1DE41EE67434C87E9A2897C10 /* Pods_teste.framework */,
 				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
+				4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField.bundle */,
+				EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EDE67CD2DEB79BD0EADBB56949E05022 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				750C6E13CB434D42E01326B6AF0A2099 /* KeychainSwift */,
-				A81821716198988FFEC224CA2E67E61C /* SVProgressHUD */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12017C6632F31BB3455AA4F5BA296F95 /* Headers */ = {
+		2AEDCE85BA77B334D550FCA049E8C031 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B78BCEBF8F21F8ACDC4A8FD18A367C1 /* Pods-teste-umbrella.h in Headers */,
+				D82F7CF27850D0DBC675F68CB55B7268 /* Pods-teste-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +372,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D969D5CB97B315EFA56EAFB6D3FAB728 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A66FAE71FE9919BCDB00207679028F /* VMaskEditor.h in Headers */,
+				4FC9D78CAFB5AA0A946510E438C36AFF /* VMaskTextField-umbrella.h in Headers */,
+				F4DEED8C894764EEA306FA7172DB540C /* VMaskTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +406,25 @@
 			productReference = 9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9415EE67193FCA5950DEE21DC7343294 /* Build configuration list for PBXNativeTarget "VMaskTextField" */;
+			buildPhases = (
+				D969D5CB97B315EFA56EAFB6D3FAB728 /* Headers */,
+				70467044650BC9CC60EF8C97C8DFE8DD /* Sources */,
+				A5D703B14617E68823EC79D06C4744BB /* Frameworks */,
+				499ECC8B179D225BB467F87749A9292A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D8135A4B08C91239CBBF261E30C0E12 /* PBXTargetDependency */,
+			);
+			name = VMaskTextField;
+			productName = VMaskTextField;
+			productReference = EA97574CD0726F7B5D00DCD25F80A9EF /* VMaskTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
@@ -333,23 +445,41 @@
 		};
 		39071F6D23750A3F9707FF07B00F9162 /* Pods-teste */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43CD618C9C9F516693F323691B5B7FB3 /* Build configuration list for PBXNativeTarget "Pods-teste" */;
+			buildConfigurationList = 57C979D42A8567D971B827C90CC71E45 /* Build configuration list for PBXNativeTarget "Pods-teste" */;
 			buildPhases = (
-				12017C6632F31BB3455AA4F5BA296F95 /* Headers */,
-				B3F4EA65811414D6D319916BDDDF9C85 /* Sources */,
-				D3562EB84A82724551E6D880C5AE189B /* Frameworks */,
-				6461DD0DAF54376182559E224867B5DA /* Resources */,
+				2AEDCE85BA77B334D550FCA049E8C031 /* Headers */,
+				30F063700EE91D231C261F059ACAE26D /* Sources */,
+				2F47B368B4AB3076A825888684B046D7 /* Frameworks */,
+				FE8239ECBDD52397C06843B5549A029B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9888E243F29E167E9E72C45EC7B1ABC /* PBXTargetDependency */,
-				F5743C64B0B40E0FF9EBB73BAEBD30C2 /* PBXTargetDependency */,
+				021692AB1E1AF23F86A7A5F73195B325 /* PBXTargetDependency */,
+				197790C9EAFC5CE020EA22FD49E5D05C /* PBXTargetDependency */,
+				5AD0DCD4BB90F7FEF7AA02C8D0C93AB8 /* PBXTargetDependency */,
 			);
 			name = "Pods-teste";
 			productName = "Pods-teste";
 			productReference = 03C108B1DE41EE67434C87E9A2897C10 /* Pods_teste.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7895F4E726EA430598A9DB87FE06847 /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */;
+			buildPhases = (
+				3E0D9CA9DAE2A63C044EB71653B47E0E /* Sources */,
+				B7D778C1F4E4D44E128F09F81E0772DF /* Frameworks */,
+				E8CBF67CC840CADB608F5EE167470A8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VMaskTextField-VMaskTextField";
+			productName = "VMaskTextField-VMaskTextField";
+			productReference = 4AADE1DEAAB177F044FF2FF45BF5B0FC /* VMaskTextField.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -369,13 +499,15 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D3E4E25B3AB3918DE3AE2E0C1D7E5758 /* Products */;
+			productRefGroup = EE941AF34F36F25A394E48B8DBB2CDCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
 				39071F6D23750A3F9707FF07B00F9162 /* Pods-teste */,
 				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
+				088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */,
+				E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */,
 			);
 		};
 /* End PBXProject section */
@@ -388,10 +520,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6461DD0DAF54376182559E224867B5DA /* Resources */ = {
+		499ECC8B179D225BB467F87749A9292A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405797848353C86816720AC67CBC49D0 /* VMaskTextField.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,14 +536,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8CBF67CC840CADB608F5EE167470A8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8239ECBDD52397C06843B5549A029B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3F4EA65811414D6D319916BDDDF9C85 /* Sources */ = {
+		30F063700EE91D231C261F059ACAE26D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F35362ECB0223EE9D5572C5D8E3B684 /* Pods-teste-dummy.m in Sources */,
+				977E9126DA88916789583D694825D3A0 /* Pods-teste-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E0D9CA9DAE2A63C044EB71653B47E0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70467044650BC9CC60EF8C97C8DFE8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B44CBCC7750753C647262A4BFC382D6 /* VMaskEditor.m in Sources */,
+				409D2135DB611F0C9F1BE7E40E201487 /* VMaskTextField-dummy.m in Sources */,
+				49B1BD84FE5BAF8B67C6113DB09CC79E /* VMaskTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,24 +604,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C9888E243F29E167E9E72C45EC7B1ABC /* PBXTargetDependency */ = {
+		021692AB1E1AF23F86A7A5F73195B325 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainSwift;
 			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
-			targetProxy = 93F9C85E71EC391346C49FA9DAB21B21 /* PBXContainerItemProxy */;
+			targetProxy = DB90D9422C1DE9DF66BCF24A7325A765 /* PBXContainerItemProxy */;
 		};
-		F5743C64B0B40E0FF9EBB73BAEBD30C2 /* PBXTargetDependency */ = {
+		197790C9EAFC5CE020EA22FD49E5D05C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = 84D645C887ACF5C23095F1AB51A34C2F /* PBXContainerItemProxy */;
+			targetProxy = 75F1AEF1AFA534AFD94191AEB168DAC8 /* PBXContainerItemProxy */;
+		};
+		4D8135A4B08C91239CBBF261E30C0E12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VMaskTextField-VMaskTextField";
+			target = E763F14765476678A309E392653B3498 /* VMaskTextField-VMaskTextField */;
+			targetProxy = 3103E30B084A376FE1D06E5B6C7D872F /* PBXContainerItemProxy */;
+		};
+		5AD0DCD4BB90F7FEF7AA02C8D0C93AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VMaskTextField;
+			target = 088B8C3B51FC2AFA7E98EC5DB30033F6 /* VMaskTextField */;
+			targetProxy = 663BFFB41C576B2420021BACB4D0E2DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2523392A09D6E826DD64976C0C445393 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04F9600564B4476628DC1F88A8BD4821 /* SVProgressHUD.release.xcconfig */;
+			baseConfigurationReference = 157D966720DA4A4C556D896DEC3E3FF5 /* SVProgressHUD.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -490,9 +666,43 @@
 			};
 			name = Release;
 		};
+		3C9CB241C9ED8396C70705A98B471113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2D61230959BC05992E5DDE019073FC /* VMaskTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/VMaskTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				PRODUCT_MODULE_NAME = VMaskTextField;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		593E0D9A581ECC7BB34AAD38EBF4854E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A04D7ACC9EED09EB896FFB2D5FD57B /* KeychainSwift.release.xcconfig */;
+			baseConfigurationReference = 49C7AA7AEB5466A186DA5252469939EC /* KeychainSwift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -525,9 +735,25 @@
 			};
 			name = Release;
 		};
+		61C4D4A706BD42806E30F38EC4B9F91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2D61230959BC05992E5DDE019073FC /* VMaskTextField.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				IBSC_MODULE = VMaskTextField;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		63051A5E9DE504F4E38528B4E55996DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D3E479A72CB3651FD3C876BE223C446 /* KeychainSwift.debug.xcconfig */;
+			baseConfigurationReference = 4C1CFEBC5FD420D2AAD77F9C5038C6CD /* KeychainSwift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -553,43 +779,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		706A1FFE7C5C4B738A18FB1992F8E00F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28791046BC26A18730CE5BCDDF2C54CD /* Pods-teste.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-teste/Pods-teste-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-teste/Pods-teste.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -598,7 +787,7 @@
 		};
 		7D06A784025F8033DD359DE587B8DF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0BD044099418E2C58410E3CA8D6004E /* SVProgressHUD.debug.xcconfig */;
+			baseConfigurationReference = D0541B4383741920A5AAC15C77D90959 /* SVProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -629,6 +818,57 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		815DE7C0690CC0F6CBEB1C1D37696C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF78986C7DA3F2676582B40A3749177 /* VMaskTextField.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				IBSC_MODULE = VMaskTextField;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B3729D8E08EA2EF562BC128BE941E13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF78986C7DA3F2676582B40A3749177 /* VMaskTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/VMaskTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				PRODUCT_MODULE_NAME = VMaskTextField;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -696,9 +936,9 @@
 			};
 			name = Debug;
 		};
-		BDAC49A2C0B976A9933E9D3EF1277A2F /* Release */ = {
+		BF87632931EFCC629016F8DFECAB4264 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AFDC446F6F01DE54F7BEF515AE29D3 /* Pods-teste.release.xcconfig */;
+			baseConfigurationReference = 28791046BC26A18730CE5BCDDF2C54CD /* Pods-teste.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -728,11 +968,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -796,18 +1035,47 @@
 			};
 			name = Release;
 		};
+		D5C4FEA915805DF753BBF6860142FE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19AFDC446F6F01DE54F7BEF515AE29D3 /* Pods-teste.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-teste/Pods-teste-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-teste/Pods-teste.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43CD618C9C9F516693F323691B5B7FB3 /* Build configuration list for PBXNativeTarget "Pods-teste" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				706A1FFE7C5C4B738A18FB1992F8E00F /* Debug */,
-				BDAC49A2C0B976A9933E9D3EF1277A2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -817,11 +1085,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		57C979D42A8567D971B827C90CC71E45 /* Build configuration list for PBXNativeTarget "Pods-teste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF87632931EFCC629016F8DFECAB4264 /* Debug */,
+				D5C4FEA915805DF753BBF6860142FE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9415EE67193FCA5950DEE21DC7343294 /* Build configuration list for PBXNativeTarget "VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9CB241C9ED8396C70705A98B471113 /* Debug */,
+				B3729D8E08EA2EF562BC128BE941E13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63051A5E9DE504F4E38528B4E55996DA /* Debug */,
 				593E0D9A581ECC7BB34AAD38EBF4854E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7895F4E726EA430598A9DB87FE06847 /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C4D4A706BD42806E30F38EC4B9F91A /* Debug */,
+				815DE7C0690CC0F6CBEB1C1D37696C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

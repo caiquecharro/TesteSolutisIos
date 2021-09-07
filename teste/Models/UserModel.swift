@@ -13,7 +13,7 @@ class UserModel: Decodable{
     var nome: String = ""
     var cpf: String = ""
     var token: String = ""
-    var saldo: Float = 0.00
+    var saldo: Double = 0.00
     var mensagem: String = ""
     
     

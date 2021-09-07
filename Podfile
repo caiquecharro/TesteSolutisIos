@@ -11,6 +11,8 @@ target 'teste' do
   pod 'SVProgressHUD', '2.0.3'
 #:git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 
+ pod 'VMaskTextField','1.0.8'
+
 
 
 end
