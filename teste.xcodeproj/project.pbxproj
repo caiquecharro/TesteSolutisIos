@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A847510B39B1AAC8586099F /* Pods_teste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1025A11E5380580FE47C9E9C /* Pods_teste.framework */; };
+		BA42CCDC26E8F87300E05222 /* BiometryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42CCDB26E8F87300E05222 /* BiometryContext.swift */; };
 		BA447DCA26752C5300C0932F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DC926752C5300C0932F /* AppDelegate.swift */; };
 		BA447DCC26752C5300C0932F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DCB26752C5300C0932F /* SceneDelegate.swift */; };
 		BA447DCE26752C5300C0932F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DCD26752C5300C0932F /* LoginViewController.swift */; };
@@ -15,7 +16,6 @@
 		BA447DD326752C5400C0932F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA447DD226752C5400C0932F /* Assets.xcassets */; };
 		BA447DD626752C5400C0932F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA447DD426752C5400C0932F /* LaunchScreen.storyboard */; };
 		BA447DDE2676795F00C0932F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DDD2676795F00C0932F /* HomeView.swift */; };
-		BA6789D526E8002C002663C2 /* BiometryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6789D426E8002C002663C2 /* BiometryContext.swift */; };
 		BA9C2F1126E14940007B245E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA9C2F1026E14940007B245E /* Localizable.strings */; };
 		BAB540D726CAB53500ACE26A /* CellPositiva.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA447DDF2676817300C0932F /* CellPositiva.swift */; };
 		BAC355A626E7A9B300C8C6EE /* StatementsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC355A526E7A9B300C8C6EE /* StatementsResponse.swift */; };
@@ -29,6 +29,7 @@
 		1025A11E5380580FE47C9E9C /* Pods_teste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDE4FDD129AD073F80C29A3 /* Pods-teste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste.debug.xcconfig"; path = "Target Support Files/Pods-teste/Pods-teste.debug.xcconfig"; sourceTree = "<group>"; };
 		B3BD23FC33DABC416001CBBB /* Pods-teste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste.release.xcconfig"; path = "Target Support Files/Pods-teste/Pods-teste.release.xcconfig"; sourceTree = "<group>"; };
+		BA42CCDB26E8F87300E05222 /* BiometryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometryContext.swift; sourceTree = "<group>"; };
 		BA447DC626752C5300C0932F /* teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA447DC926752C5300C0932F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA447DCB26752C5300C0932F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		BA447DD726752C5400C0932F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA447DDD2676795F00C0932F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BA447DDF2676817300C0932F /* CellPositiva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPositiva.swift; sourceTree = "<group>"; };
-		BA6789D426E8002C002663C2 /* BiometryContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometryContext.swift; path = ../../../../../Projetos/AGI.APP.Agillitas.IOS/Source/Apps/iOS/Agillitas/BiometryContext.swift; sourceTree = "<group>"; };
 		BA9C2F1026E14940007B245E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BAC355A526E7A9B300C8C6EE /* StatementsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsResponse.swift; sourceTree = "<group>"; };
 		BAD255F426DFC4560074E15C /* CellNegativo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNegativo.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD8E75626CDBDC7001BE4C1 /* Utils.swift */,
-				BA6789D426E8002C002663C2 /* BiometryContext.swift */,
+				BA42CCDB26E8F87300E05222 /* BiometryContext.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC355A626E7A9B300C8C6EE /* StatementsResponse.swift in Sources */,
-				BA6789D526E8002C002663C2 /* BiometryContext.swift in Sources */,
+				BA42CCDC26E8F87300E05222 /* BiometryContext.swift in Sources */,
 				BAD255F526DFC4560074E15C /* CellNegativo.swift in Sources */,
 				BAB540D726CAB53500ACE26A /* CellPositiva.swift in Sources */,
 				BAD8E75426CD9C2D001BE4C1 /* UserModel.swift in Sources */,
