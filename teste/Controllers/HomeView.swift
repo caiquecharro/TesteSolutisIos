@@ -26,6 +26,7 @@ class HomeView: UIViewController, UITableViewDelegate, UITableViewDataSource, St
         super.viewDidLoad()
         
         setGradient()
+       
         
         self.lblName.text = user!.nome
         self.lblCpf.text = user!.cpf
@@ -75,7 +76,22 @@ class HomeView: UIViewController, UITableViewDelegate, UITableViewDataSource, St
     
     @IBAction func clickLogout(_ sender: Any) {
         
-        self.dismiss(animated: false, completion: nil)
+        var refreshAlert = UIAlertController(title: "Alerta", message: "Deseja realmente sair ?", preferredStyle: .alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Sim", style: .default, handler: { (action: UIAlertAction!) in
+            
+            self.dismiss(animated: false, completion: nil)
+            
+          }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Não", style: .cancel, handler: {(action: UIAlertAction!) in
+
+            
+          }))
+
+        present(refreshAlert, animated: true, completion: nil)
+        
+        
         
     }
     

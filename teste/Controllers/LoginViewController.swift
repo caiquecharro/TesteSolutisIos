@@ -34,7 +34,9 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         self.btnLogin.layer.cornerRadius = self.btnLogin.frame.width/8.0
         self.btnLogin.layer.masksToBounds = true
         self.lblValidator.isHidden = true
@@ -104,7 +106,7 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
     }
     
     @IBAction func clickLogin(_ sender: Any) {
-        
+        SVProgressHUD.show()
         self.validations()
         
     }
@@ -163,13 +165,14 @@ class LoginViewController: UIViewController , LoginResponseDelegate, UITextField
     
     func doLogin(){
         
-        SVProgressHUD.show()
+        
+        var keychain = KeychainSwift()
         
         self.username = self.txtUser.text
         self.password = self.txtPassword.text
         
-        if isBiometry == true{
-            var keychain = KeychainSwift()
+        if keychain.get("lembrarBiometria") != nil{
+            
             
             self.username = keychain.get("userName")
             self.password = keychain.get("userPassword")
